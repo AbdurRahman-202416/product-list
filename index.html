@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+  </head>
+  <body class="bg-gray-100">
+
+      <navbar>
+        <div class="flex space-x-4  border-gray-900/35">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-gray-700 ">Dashboard</a>
+            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-gray-700 hover:text-white">Team</a>
+            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-gray-700 hover:text-white">Projects</a>
+            <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-950 hover:bg-gray-700 hover:text-white">Calendar</a>
+          </div>
+      </navbar>
+
+    <div class="border-b border-gray-900/10 pb-12 m-8 p-6 bg-[#9BA3EB] rounded-md">
+      <h2
+        class="text-3xl font-bold text-center mt-8 bg-white text-[#10375C] w-auto rounded-lg m-1"
+      >
+        Add Product Information 
+      </h2>
+      <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+        <div class="sm:col-span-3">
+          <label
+            for="first-name"
+            class="block text-sm font-medium leading-6 text-gray-900"
+            >Product Name :</label
+          >
+          <div class="mt-2">
+            <input
+            required
+              type="text"
+              name="first-name"
+              id="ProductName"
+              autocomplete="given-name"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+        </div>
+
+        <div class="sm:col-span-3">
+          <label
+            for="last-name"
+            class="block text-sm font-medium leading-6 text-gray-900"
+            >Year:</label
+          >
+          <div class="mt-2">
+            <input
+              type="number"
+              name="last-name"
+              id="year"
+              autocomplete="family-name"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm p-1 sm:leading-6"
+            />
+          </div>
+        </div>
+
+        <div class="col-span-3">
+          <label
+            for="street-address"
+            class="block text-sm font-medium leading-6 text-gray-900"
+            >Product Price:</label
+          >
+          <div class="mt-2">
+            <input
+              type="number"
+              name=""
+              id="price"
+              autocomplete="street-address"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+        </div>
+
+        <div class="sm:col-span-3 ">
+          <label
+            for="city"
+            class="block text-sm font-medium leading-6 text-gray-900"
+            >CPU Model:</label
+          >
+          <div class="mt-2">
+            <input
+              type="text"
+              name="CPU"
+              id="CPU"
+              autocomplete="address-level2"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+        </div>
+
+        <div class="sm:col-span-3">
+          <label
+            for="region"
+            class="block text-sm font-medium leading-6 text-gray-900"
+            >Hard Disk Size:</label
+          >
+          <div class="mt-2">
+            <input
+              type="text"
+              name="region"
+              id="HardDisk"
+              autocomplete="address-level1"
+              class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            />
+          </div>
+        </div>
+    
+      <div class="mt-6 w-3/6 mx-auto col-span-3 p-2">
+        <button id="submit-btn" type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300">Register</button>
+    </div>
+</form>
+    </div>
+
+    <h1 class="text-3xl font-bold text-center text-gray-800 mt-8">
+      Product List
+    </h1><hr class="shadow-amber-200 w-3/4 mx-auto h-1 bg-zinc-600 mt-2 rounded-md"/>
+
+    <div
+      id="product-list"
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8"
+    >
+     </div>
+     <img class="img m-5 p-20 rounded-md mx-auto  border-gray-900/35" src="https://www.codingdojo.com/blog/wp-content/uploads/code-3.jpg" alt="">
+    <script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
